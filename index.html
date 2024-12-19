@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEG Website</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header nav a:hover {
+            color: #ff00ff;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .main-content h1 {
+            font-size: 2em; 
+            color: #ff0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 1em;
+            max-width: 600px;
+            text-align: center;
+            color: #ccc; 
+            margin-bottom: 20px;
+        }
+        .character, .gorilla-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            display: block;
+        }
+        .info-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info-box p {
+            color: #ff0;
+            margin: 5px 0;
+        }
+        .info-box p:nth-child(2) {
+            color: #ff00ff;
+        }
+        .contract-address {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff0;
+            margin-top: 10px;
+        }
+        @media (min-width: 768px) {
+            .main-content {
+                flex-direction: row;
+            }
+            .main-content h1, .main-content p {
+                text-align: left;
+            }
+            .info-box {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zethereum Logo">
+        <nav>
+            <a href="#">FEG Token</a>
+            <a href="#">FEG Token Economics</a>
+        </nav>
+    </header>
+    <section class="main-content">
+        <div>
+            <h1>FEED EVERY GORILLA</h1>
+            <p>This is an innovative meme project by AI, Grok, which was chosen to be released on the zethereum public chain.!</p>
+            <div class="info-box">
+                <p>Feg Code and website created by Grok AI</p>
+                <p>Feg circulation is 100 million and airdrops 10,000 pieces to 10,000 people, each with 10,000 pieces</p>
+            </div>
+        </div>
+        <img class="gorilla-image" src="gorilla-character.png" alt="Gorilla Character">
+        <p class="contract-address">0x43F4590FFF471E1c12c26a97B74acB4d318148d3</p>
+    </section>
+</body>
+</html>
